@@ -1,9 +1,8 @@
-#include  <stdio.h>
+#include <stdio.h>
+
 /**
- * main - print: using the string the main function
- * Description : using the main function 
- * this program prints programming is like building a multilingual puzzle
- * Return: 0
+ * main - prints the phrase "Programming is like building a multilingual puzzle
+ * Return: 0 if exited properly, non_zero otherwise
  */
 int main(void)
 {
