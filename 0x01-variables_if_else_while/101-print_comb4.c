@@ -23,16 +23,17 @@ int main(void)
 					putchar(k + '0');
 
 						if (i != 7)
+
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
 
-				}
 			}
-		}	
+		}
+	}	
 
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
