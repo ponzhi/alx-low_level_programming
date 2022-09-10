@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-/** 
+/**
  *main - prints the phrase with proper grammar
  *
  *Return: Always (success)
