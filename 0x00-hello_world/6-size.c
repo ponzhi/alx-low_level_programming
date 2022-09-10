@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-* main - Prints the sizeof mant var types
-*
-* Return: Always 0 (success)
+ *main - Prints the sizeof mant var types
+ *
+ *Return: Always 0 (success)
 */ 
 int main (void)
 {
