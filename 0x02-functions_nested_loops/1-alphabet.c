@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- *
- *main - print the lower alphabets
- *
- *Return: Always 0
+ *print_alphabte -> print the lower alphabets
  */
+
 void print_alphabet(void)
 {
 	int i;
