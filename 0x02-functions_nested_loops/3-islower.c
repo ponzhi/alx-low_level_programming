@@ -2,7 +2,7 @@
 
 /**
  *_islower -> checks if the character is lowercase
- *@c: is the int that will use for the argument of the function 
+ *@c: is the int that will use for the argument of the function
  *Return: return 1 and 0 depending on condition
  */
 
