@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabte ->function to print abc
+ * print_alphabte -> function to print abc
  */
 
 void print_alphabet(void)
