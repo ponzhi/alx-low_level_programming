@@ -1,18 +1,16 @@
 #include "main.h"
 
 /**
- * print_numbers - print the number since 0 up to 9
- *
- * Return: the numbers since 0 up to 9
+ * print_numbers - print number
  */
 
 void print_numbers(void)
 {
-	int i;
+	int c;
 
-	for (i = 48; i < 58; i++)
+	for (c = 48; c < 58; c++)
 	{
-		_putchar(i);
+		_putchar(c);
 	}
 
 	_putchar('\n');
