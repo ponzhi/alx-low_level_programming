@@ -3,7 +3,6 @@
 
 
 /**
- *
  * *  _strcmp - Function which compare two strings and
  *
  * *@s1: first string
