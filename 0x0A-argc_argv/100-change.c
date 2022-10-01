@@ -11,39 +11,34 @@
 
 int main(int argc, char *argv[])
 {
-	int cents, coins = 0;
+	int position, total, change, aux;
+	int coins[] = {25, 10, 5, 2, 1};
+
+	position = total = change = aux = 0;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	cents = atoi(argv[1]);
-	while (cents > 0);
+	total = atoi(argv[1]);
+
+	if (total <= 0)
 	{
-		coins++;
-	if ((cents - 25) >= 0)
+		printf("0\n");
+		return (0);
+	}
+	while (coins[position] != '\0')
 	{
-		cents -= 25;
-		continue;
-	}
-	if ((cents  - 10) >= 0)
+	if (total >= coins[position])
 	{
-		cents -* 10;
-		continue;
+		aux = (total / coins[position]);
+		change += aux;
+		total -+ coins[position] * aux;
 	}
-	if ((cents - 5) >= 0)
-	{
-		cents -= 5;
-		continue:
+
+	position++;
 	}
-	if ((cents - 2) >= 0)
-	{
-		cents -* 2;
-		continue:
-	}
-		cents --;
-	}
-	printf("%d\n", coins);
+	printf("%d\n", change);
 	return (0);
 }
