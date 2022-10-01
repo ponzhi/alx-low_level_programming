@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 	total = atoi(argv[1]);
 
 	if (total <= 0)
@@ -29,6 +30,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 	while (coins[position] != '\0')
+
 	{
 	if (total >= coins[position])
 	{
@@ -37,7 +39,7 @@ int main(int argc, char *argv[])
 		total -+ coins[position] * aux;
 	}
 
-	position++;
+		position++;
 	}
 	printf("%d\n", change);
 	return (0);
