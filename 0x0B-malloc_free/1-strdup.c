@@ -4,7 +4,7 @@
  * _strdup - return a pointer to a newly allocated
  * space in memory, which contains a copy of the
  * string given as a parameter.
- * @string: String to be copied
+ * @str: String to be copied
  *
  * Return: NULL in case of arror, pointer to allocated space
  */
