@@ -7,7 +7,7 @@
  * Return: No. of words in the string (int)
  */
 
-char **strtow(char *str)
+int wordnos(char *s)
 {
 	int flag, c, w;
 
