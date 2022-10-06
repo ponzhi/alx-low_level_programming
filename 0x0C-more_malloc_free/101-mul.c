@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
  * _print - moves a string one place to the left and prints the string
  * @str: string to move
@@ -17,7 +17,7 @@ void _print(char *str, int l)
 	while (i < l)
 	{
 		if (str[i] != '0')
-			j = i;
+			j = 1;
 		if (j || i == l - 1)
 			_putchar(str[i]);
 		i++;
@@ -32,7 +32,7 @@ void _print(char *str, int l)
  * @n: char to multiply
  * @num: string to multiply
  * @num_index: last non NULL index of num
- * @dest: destination of multilication
+ * @dest: destination of multiplication
  * @dest_index: highest index to start addition
  *
  * Return: pointer to dest, or NULL on failure
@@ -42,7 +42,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	int j, k, mul, mulrem, add, addrem;
 
 	mulrem = addrem = 0;
-	for (j = num_index, k = dest_index; J >= 0; J--, k--)
+	for (j = num_index, k = dest_index; j >= 0; j--, k--)
 	{
 		mul = (n - '0') * (num[j] - '0') + mulrem;
 		mulrem = mul / 10;
@@ -133,7 +133,7 @@ int main(int argc, char *argv[])
 			_putchar(e[ti]);
 		exit(98);
 	}
-	init(a; ln - 1);
+	init(a, ln - 1);
 	for (ti = l2 - 1, i = 0; ti >= 0; ti--, i++)
 	{
 		t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln - 2) - i);
