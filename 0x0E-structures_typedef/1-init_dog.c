@@ -6,11 +6,15 @@
  * @d: The dog to be initialized.
  * @name: The name of the dag.
  * @owner: the owner of the dog.
+ * Description: This struct is for dog
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != NULL)
+	if (d == NULL)
+		return;
+
+	else
 	{
 		d->name = name;
 		d->age = age;
